@@ -3,7 +3,7 @@ import useFetchRepositories from './hooks/useRepos';
 import { useFavouriteReposStore } from './store/favouriteRepos';
 
 function App() {
-  const { data, isLoading } = useFetchRepositories();
+  const { data, isLoading } = useFetchRepositories('guidopontet');
   const { favouriteReposIds } = useFavouriteReposStore();
 
   if (isLoading) {
